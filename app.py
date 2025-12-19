@@ -87,7 +87,7 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, 
 
 @app.get("/health")
 async def health():
-    return {"status": "ok"}
+    return {"status": "healthy"}
 
 class ChatRequest(BaseModel):
     question: str
